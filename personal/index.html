@@ -4,38 +4,63 @@
     <meta charset="utf-8">
     <style>
 
+        .pill-container {
+            border-radius: 2em;
+            border-width: 0px;
+        }
+
         .pill {
             border-radius:2em;
             border-width: 2px;
-            border-style:solid;
+            border-style: solid;
             border-color: black;
             background-color: dodgerblue;
             height: 2em;
-            padding-left:5px;
-            padding-right:5px;
-            margin:1em;
-            line-height: 2em
-
+            padding-left:10px;
+            padding-right:10px;
+            line-height: 2em;
+            max-width: 85%;
+            min-width: 50%
+            
         }
 
         .sub-pill {
+            -webkit-transition-duration: .2s;
+            transition-duration: .2s;
             background-color: darkslateblue;
         }
+
+        a.sub-pill:link, a.sub-pill:visited {
+            background-color: mediumslateblue;
+            color: white;
+            text-align: center; 
+            text-decoration: none;
+
+        }
+
+        a.sub-pill:hover, a.sub-pill:active {
+            background-color: white;
+            color:mediumslateblue
+        }
+
         ul {list-style-type: none}
+
         nav {    
             float: left;
-            width: 25%
+            width: 35%
         }
+
         article {
             float: right;
-            width: 70%
+            width: 65%;
         }
+
         body {
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             background-color: rgb(20,40,40);
             color:antiquewhite
-
         }
+
     </style>
 </head>
 <body>
@@ -46,10 +71,12 @@
     <h3>Topics</h3>
     <ul>
         <li>
+
             <div class="pill">Family</div>
+
             <ul>
                 <li>
-                    <div class="pill sub-pill">Stephen's first "robot"</div>
+                    <a class="pill sub-pill" href="#">Stephen's first "robot" - 07/12/2017</a>
                 </li>
             </ul>
         </li>
@@ -58,7 +85,7 @@
             <div class="pill">Code</div>
             <ul>
                 <li>
-                    <div class="pill sub-pill">My Python Story</div>
+                    <a class="pill pill-left sub-pill" href="#">My Python Story - 07/17/2017</a>
                 </li>
             </ul>
         </li>
@@ -67,13 +94,14 @@
             <div class="pill">Projects</div>
             <ul>
                 <li>
-                    <button type="button"><div class="pill sub-pill" href="#">Bunk Bed Build</div></button>
+                    <a class="pill pill-left sub-pill" href="#">Bunk Bed Build - 07/18/2017</a>
+
                 </li>
             </ul>
         </li>
     </ul>
 </nav>
-<article>
+<article id="article_1">
     <h2>Lorem Ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere dapibus odio ut rutrum. Suspendisse non augue nec elit vestibulum feugiat. Morbi et felis elit. Sed id posuere mauris, rutrum vestibulum sem. Nam ullamcorper massa condimentum malesuada euismod. Suspendisse luctus non ante a tempor. Cras sed quam quis ligula varius porttitor vitae malesuada nunc. Aliquam ac felis velit. Donec dolor diam, sollicitudin eu tempus id, tincidunt ac risus. Ut imperdiet semper fringilla. Vivamus condimentum dolor eu mi consectetur, in dictum neque commodo.</p>
 
