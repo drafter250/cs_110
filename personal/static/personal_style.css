@@ -1,11 +1,37 @@
 
-h1, h2 {text-align: center}
+h1 {text-align: center}
 
-
-.pill-container {
-    border-radius: 2em;
-    border-width: 0px;
+p {
+    line-height: 2em
 }
+
+img {
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+article a:link {color:powderblue}
+article a:visited {color:mediumpurple}
+
+.captioned {
+    text-align: center
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+
+}
+
 
 .pill {
     display: inline-block;
@@ -23,6 +49,17 @@ h1, h2 {text-align: center}
     margin-bottom: 5px;
 }
 
+.pill-header {
+    background-color: seagreen;
+    border-radius: 2em;
+    border-width: 5px;
+    border-style: solid;
+    text-align: center;
+    padding-top:1em;
+    padding-bottom: 1em;
+    margin: 2em;
+
+}
 
 .sub-pill {
     background-color: mediumslateblue;
@@ -51,17 +88,53 @@ a.pill-button:active {
 ul {list-style-type: none}
 
 nav {    
-    float: left;
-    width: 35%
+
+    min-width: 350px;
+    margin-right: 10px;
+    -webkit-flex: 5;
+    flex: 5
 }
 
 article {
-    float: right;
-    width: 65%;
+
+    -webkit-flex: 20;
+    flex: 20;
+    padding-right: 20px
 }
 
 body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: rgb(20,40,40);
     color:antiquewhite
+}
+
+table {
+    background-color: steelblue;
+    border-collapse: collapse;
+    border-radius: 1.5em
+
+}
+
+td {
+    text-align: center;
+    padding: 12px
+}
+
+th {
+    background-color: rgb(60,70,120);
+    padding: 10px;
+    border-radius: 1.5em;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:10px
+}
+thead {
+    border-radius: 1.5em
+}
+tr:nth-child(even) {
+    background-color: lightslategray;
+    color: black
+}
+tr:last-child {
+    border-radius: 1.5em
 }

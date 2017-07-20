@@ -11,7 +11,7 @@ var posts = [
      "post_date": "07/18/2017",
      "link": "bunk_bed_build.html",
      "topic_id": "Projects"},
-     
+
     {"post_title": "My Python Story",
      "post_date": "07/19/2017",
      "link": "my_python_story.html",
@@ -24,7 +24,7 @@ function InsertNavShell() {
         <h3>Topics</h3>
         <ul>
             <li>
-                <a class="pill pill-button" href="index.html">Home</a>
+                <a class="pill pill-button" href="index.html">Welcome</a>
             </li>
             <li>
                 <div class="pill">Family</div>
