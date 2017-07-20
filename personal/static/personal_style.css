@@ -1,0 +1,67 @@
+
+h1, h2 {text-align: center}
+
+
+.pill-container {
+    border-radius: 2em;
+    border-width: 0px;
+}
+
+.pill {
+    display: inline-block;
+    border-radius:2em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: dodgerblue;
+    color: antiquewhite;
+    height: 2em;
+    padding-left:10px;
+    padding-right:10px;
+    line-height: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.sub-pill {
+    background-color: mediumslateblue;
+}
+
+.pill-button {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+
+}
+a.pill-button:link, a.pill-button:visited {
+    text-align: center; 
+    text-decoration: none;
+}
+
+a.pill-button:hover  {
+    background-color: white;
+    color:mediumslateblue
+}
+
+a.pill-button:active {
+    background-color: black;
+    color: white
+}
+
+ul {list-style-type: none}
+
+nav {    
+    float: left;
+    width: 35%
+}
+
+article {
+    float: right;
+    width: 65%;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: rgb(20,40,40);
+    color:antiquewhite
+}
