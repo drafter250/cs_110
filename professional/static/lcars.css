@@ -1,0 +1,32 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+
+}
+
+.flex-hbox {
+
+}
+
+.flex-vbox {
+
+}
+
+a.pill-button:link, a.pill-button:visited {
+    text-align: center; 
+    text-decoration: none;
+}
+
+a.pill-button:hover  {
+    background-color: white;
+    color:mediumslateblue
+}
+
+a.pill-button:active {
+    background-color: black;
+    color: white
+}
