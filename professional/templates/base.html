@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Crafty Girls' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/proffesional.css">
+    <title>KnittyGirlDesigns - {% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="flexbox hbox">
+    <div class="flexbox left-gutter vbox"></div>
+    <div class="flexbox vbox" style="flex: 1 10 auto">
+        <div class="flexbox hbox">
+            <div class="flexbox hbox">
+                <div class="flexbox vbox">
+                    <img src="static/KnittyGirlDesigns.title.alpha.png" class="banner-img">
+                </div>
+            </div>
+            <div class="flexbox hbox" style="justify-content: flex-end">
+                <div class="flexbox vbox">
+                    <img src="static/KnittyGirlDesignsfaceonly.png" style="width:200px">
+                </div>
+            </div>
+        </div>
+        <div class="flexbox hbox">
+            <a class="nav-button">Blog</a><a class="nav-button">Patterns</a><a class="nav-button">Portfolio</a><a class="nav-button">Store</a>
+        </div>
+        <div id ="main_content" class="flexbox vbox">
+            {% block content %}
+            <h1 class="flx-centered">Welcome to KnittyGirlDesigns</h1>
+            <p>Hi I am Tyna I have been Knitting and doing all manner of Fiber Arts for almost 15 years.
+               I have a number of my most favorite projects for sale in my <a href="/store.html">Store</a>
+               I also work on commission when time permits. Take a look at My <a href="portfolio.html">Portfolio</a> and <a href="/store.html">Store</a> pages.
+               If there is something you like in my Portfolio that is not in the <a href="/store.html">Store</a> please use the Custom request form
+            </p>
+            {% endblock %}
+        </div>
+    </div>
+    <div class="flexbox vbox right-gutter"></div>
+</div>
+</body>
+</html>
