@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Lab 6-3</title>
+        <style>
+            h1 {
+                text-align: center
+            }
+            img {
+                display: block;
+                margin: auto;
+                }
+            hr {
+                background-color: #2fb66a;
+                height: 10px;
+                width: 80%
+                }
+            legend {
+                float: right
+                }
+            
+            table {
+                border-style: none;
+                margin: 10px;
+                width: 100%
+                }
+
+            td {
+                padding-left: 20px;
+                padding-right: 20px
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Nested Groupings and Controls Witihin a Table</h1>
+        <form method="post" action="mailto:brycevtr250@gmail.com">
+            <fieldset>
+                <legend>Overall Grouping</legend>
+                <p>Your Name: <input name="user-name" type="text"></p>
+                <p>E-mail address: <input name="submitter-email" type="email"></p>
+                <fieldset>
+                    <legend>First Sub-grouping</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Your question Here:</p>
+                                <input type="radio" name="choices1" value="choice1" />Choice 1<br />
+                                <input type="radio" name="choices1" value="choice2" checked="true" />Choice 2<br />
+                            </td>
+                            <td>
+                                <p>Your question #2 Here:</p>
+                                <input type="checkbox" name="multiple1" value="choice_1" />Choice 1<br />
+                                <input type="checkbox" name="multiple1" value="choice_2" />Choice 2<br />
+                                <input type="checkbox" name="multiple1" value="choice_3" />Choice 3<br />
+                                <input type="checkbox" name="multiple1" value="choice_4" checked="true" />Choice 4<br />
+                                <input type="checkbox" name="multiple1" value="choice_5" />Choice 5<br />
+                            </td>
+                            <td>
+                                <p>Your Question #3 Here:</p>
+
+                                <textarea name="open-qa" rows="5" cols="35"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Second Sub-grouping</legend>
+                    <p>Your Fourth Question Here</p>
+                    <select name="select-box" multiple="multiple" size="3">
+                        <option selected="selected">Choice 1</option>
+                        <option>Choice 2</option>
+                        <option>Choice 3</option>
+                        <option>Choice 4</option>
+                    </select>
+                </fieldset>
+                <br />
+                    <div style="text-align:center">
+                        <input type="submit" value="Submit Form">
+                        <input type="reset" value="Reset Form">
+                    </div>
+
+            </fieldset>
+        </form>
+    </body>
