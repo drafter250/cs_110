@@ -8,11 +8,11 @@ h1, h2 {
 }
 .left-gutter{
     background-color: white;
-    flex: 1 1 8.33%
+    flex: 1 2 16.66%
 }
 
 .right-gutter {
-    flex: 1 1 8.33%;
+    flex: 1 2 16.66%;
     background-color: white;
 }
 
@@ -81,7 +81,22 @@ h1, h2 {
     align-self: centered;
     }
 
+.p_entry {
+    border-style: dashed;
+    border-width: 6px;
+    border-color: mediumpurple;
+    border-radius: 2em;
+    padding: 1em;
+}
 
+.thumb {
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
 a.nav-button {
     font-family: 'Crafty Girls';
     font-size: 30px;
@@ -97,13 +112,13 @@ a.nav-button:link, a.nav-button:visited {
 
 a.nav-button:hover  {
     background-color: white;
-    color:mediumslateblue;
+    color:mediumpurple;
     border-style: dashed;
-    border-color:mediumslateblue
+    border-color:mediumpurple
 
 }
 
 a.nav-button:active {
-    background-color: mediumslateblue;
+    background-color: mediumpurple;
     color: white
 }
