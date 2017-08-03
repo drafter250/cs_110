@@ -87,8 +87,11 @@ h1, h2 {
     border-color: mediumpurple;
     border-radius: 2em;
     padding: 1em;
-}
 
+}
+.p_content {
+    justify-content: flex-start
+}
 .thumb {
     border-style: solid;
     border-color: black;
@@ -96,6 +99,7 @@ h1, h2 {
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
+    justify-content: space-between
 }
 a.nav-button {
     font-family: 'Crafty Girls';
