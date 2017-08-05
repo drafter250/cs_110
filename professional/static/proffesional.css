@@ -1,11 +1,32 @@
 
 body {
     font-family: 'Muli', sans-serif;
+    font-size: 14pt;
+    line-height: 22pt
 }
 
 h1, h2 {
     font-family: 'Crafty Girls'
 }
+
+hr.footer {
+    border-color: #6b4656;
+    border-width: 1px;
+    border-style:solid;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #cb9055;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    justify-content: space-around;
+    text-align: center
+
+}
+
 .left-gutter{
     background-color: white;
     flex: 1 2 16.66%
@@ -83,31 +104,56 @@ h1, h2 {
 
 .p_entry {
     border-style: dashed;
-    border-width: 6px;
-    border-color: mediumpurple;
+    border-width: 4px;
+    border-color: #a152da;
     border-radius: 2em;
-    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em
 
 }
 .p_content {
-    justify-content: flex-start
+    justify-content: flex-start;
+
 }
-.thumb {
+
+.p_images {
+    justify-content: flex-start;
+    flex: 1 0 auto;
+    width: 400px;
+    background-color: #E3CAF4;
+    padding: 10px
+}
+
+.p_image_main {
+
+    flex: 1 3 auto
+}
+.thumbnails {
+    flex: 1 1 auto
+}
+
+.thumb_box {
+    justify-content: stretch;
+    flex: 1 1 auto
+}
+.framed_img {
     border-style: solid;
-    border-color: black;
-    border-width: 4px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    justify-content: space-between
+    border-color: #E3CAF4;
+    border-width: 1px;
+    border-radius: 2px;
+    max-width: 100%
 }
+
 a.nav-button {
     font-family: 'Crafty Girls';
     font-size: 30px;
     flex: 1 1 auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+    background-color: #E3CAF4;
+    border-style: solid;
+    border-color: #E3CAF4;
 }
 a.nav-button:link, a.nav-button:visited {
     text-align: center; 
