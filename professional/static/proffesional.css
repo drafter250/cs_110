@@ -5,7 +5,7 @@ body {
     line-height: 22pt
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'Crafty Girls'
 }
 
@@ -29,11 +29,11 @@ footer {
 
 .left-gutter{
     background-color: white;
-    flex: 1 2 16.66%
+    flex: 1 2 12%
 }
 
 .right-gutter {
-    flex: 1 2 16.66%;
+    flex: 1 2 12%;
     background-color: white;
 }
 
@@ -102,16 +102,20 @@ footer {
     align-self: centered;
     }
 
+/* Portfolio specific store too
+*/
 .p_entry {
     border-style: dashed;
     border-width: 4px;
     border-color: #a152da;
-    border-radius: 2em;
+    border-radius: 1em;
     margin-top: 2em;
     margin-bottom: 2em
 
 }
 .p_content {
+    padding-left: 5px;
+    padding-right: 5px;
     justify-content: flex-start;
 
 }
@@ -120,8 +124,9 @@ footer {
     justify-content: flex-start;
     flex: 1 0 auto;
     width: 400px;
-    background-color: #E3CAF4;
-    padding: 10px
+
+    padding: 12px;
+    border-radius: 2em 0px 0px 2em;
 }
 
 .p_image_main {
