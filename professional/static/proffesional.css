@@ -1,0 +1,220 @@
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 14pt;
+    line-height: 22pt
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Crafty Girls'
+}
+
+hr.footer {
+    border-color: #6b4656;
+    border-width: 1px;
+    border-style:solid;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #cb9055;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    justify-content: space-around;
+    text-align: center
+
+}
+
+.left-gutter{
+    background-color: white;
+    flex: 1 2 12%
+}
+
+.right-gutter {
+    flex: 1 2 12%;
+    background-color: white;
+}
+
+.banner-img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 480px;
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+}
+.hbox {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /*ma*kes box stretch along minor axis
+    in this case verticaly */
+
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.vbox {
+    -ms-flex-direction: row;
+    flex-direction: column;
+    /*makes box stretch along minor axis
+    in this case horizontaly */
+
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.fx1 {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.fx2 {
+    flex: 1 2 auto
+}
+
+.fx3 {
+    flex: 1 3 auto
+}
+
+.fx4 {
+    flex: 1 4 auto
+}
+
+.fx5 {
+    flex: 1 5 auto
+}
+
+.fx-centered {
+    align-self: centered;
+    }
+
+/* Portfolio specific store too
+*/
+.p_entry {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #a152da;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em
+
+}
+.p_content {
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: flex-start;
+
+}
+
+.p_images {
+    justify-content: flex-start;
+    flex: 1 0 auto;
+    width: 400px;
+
+    padding: 12px;
+    border-radius: 2em 0px 0px 2em;
+}
+
+.p_image_main {
+
+    flex: 1 3 auto
+}
+.thumbnails {
+    flex: 1 1 auto
+}
+
+.thumb_box {
+    justify-content: stretch;
+    flex: 1 1 auto
+}
+.framed_img {
+    border-style: solid;
+    border-color: #E3CAF4;
+    border-width: 1px;
+    border-radius: 2px;
+    max-width: 100%
+}
+
+a.nav-button {
+    font-family: 'Crafty Girls';
+    font-size: 30px;
+    flex: 1 1 auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+    background-color: #E3CAF4;
+    border-style: solid;
+    border-color: #E3CAF4;
+}
+a.nav-button:link, a.nav-button:visited {
+    text-align: center; 
+    text-decoration: none;
+}
+
+a.nav-button:hover  {
+    background-color: white;
+    color:mediumpurple;
+    border-style: dashed;
+    border-color:mediumpurple
+
+}
+
+a.nav-button:active {
+    background-color: mediumpurple;
+    color: white
+}
+
+/* modal popup adapted from w3 schools tutorial modals
+don't trigger pop-up warnings :)*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

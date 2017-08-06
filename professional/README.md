@@ -1,63 +1,21 @@
-CS 110  PROFESSIONAL SITE
-SPECIFICATION Checklist
+# Paper
+
+## background
+I am currently a Draftsman at a major aerospace company in Connecticut. I am responsible for creating 3d models and drawings for some mechanical parts that require a lot of data and information to properly define them. The large amount of data I have to manage in my work led me to teach myself the Python programming language for which there is a rich ecosystem of open source data analysis tools available. I have developed a number of tools in python that need a user interface. While i could use some of the desktop based UI kits for building User Interfaces, having local tools running on multiple desktop machines is difficult to manage.
+
+## W
 
 
-This website theme is about any business or organization, either real or fictitious. You may not re-use your Personal Website in a different way. This needs to be totally separate and different. Have fun and be creative. You may even be hired to work on such a project after this course!
+## Professional Site Intro
+ My Wife is dedicated to being a stay at home mom while our two boys are still young. She
+ is also an avid knitter and fiber artist. While her primary focus is giving our two boys the best head-start they can get in life she dreams one day of having her own business based on knitting and other fiber arts. When I told her the main assignment for this class was building a professional web-site she pretty much decided for me what i was going to be building... a future business/portfolio site for her!
 
+The basic features we agreed upon were:
 
-TAGS from PERSONAL SITE:
+* Home Page
+* Blog page
+* Portfolio page
+* Store page
 
-1) Lists: 
-```
-UL _______________  
-OL _______________  
-DL _______________
-```
-2) Links:
+The Home Page was pretty straight forward. It's just an intro to the site and an overview of its features. Most Important to her was that the site share the same header and hat 
 
-```
-External __________
-Internal w/in same document ____________
-Internal to inside location in another local document _____________
-Email link _________
-```
-3) Tables:
-At least one, dimensions of your choice.
-```
-Cellpadding _________
-Cellspacing __________
-Caption ______________
-Header ______________
-Border _______________
-Rules ________________
-```
-4) Images:
-```
-Thumbnail _________
-Image link __________
-Image with text aligned right or left ___________
-```
-
-5) ```background color ____________```
-6) ```background image ___________```
-7) ```horizontal rule _______________```
-8) ```title _____________```
-
-NEW TAGs:
-
-9) Forms:
-```
-Text box _________
-Radio box _________
-Dropdown box __________
-Fieldset _____________
-```
-10) Javascript:
-```
-Scrolling message (using code in text NOT MARQUE tag)____________
-Date reformat ___________
-Count down to future date _____________
-Date last modified ______________
-Form data validation (One text box field) using alert box _____________
-*Scrollbar Color ______________   (extra credit 2 points)
-```
