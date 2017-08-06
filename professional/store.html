@@ -6,11 +6,19 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/proffesional.css">
     <title>KnittyGirlDesigns - Store</title>
+    <script type="text/javascript" src="static/knitty.js"></script>
+    
+    <script type="text/javascript" src="static/store.js"></script>
+    
+    
 </head>
-<body>
+<body onLoad="scroll_announce();">
 <div class="flexbox hbox">
     <div class="flexbox left-gutter vbox"></div>
     <div class="flexbox vbox" style="flex: 1 10 auto">
+        <form id="msgForm">
+            <p style="text-align: center"><input type="text" name="scrollingMsg" size="100" /></p>
+        </form>
         <div class="flexbox hbox">
             <div class="flexbox hbox">
                 <div class="flexbox vbox">
@@ -29,7 +37,63 @@
         <div id ="main_content" class="flexbox vbox">
             
             <h1 class="flx-centered">KnittyGirl's Store</h1>
+            <!-- Trigger/Open The Modal -->
+            
 
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form method="post" action="mailto:brycevtr250@gmail.com">
+                        <fieldset>
+                            <legend>Name & Mailing Address</legend>
+                            <div class="flexbox hbox">
+                                <label for="first-name">First</label><input id="first-name" name="first-name" type="text">
+                                <label for="last-name">Last</label><input id="last-name" name="last-name" type="text">
+                            </div>
+                            <div class="flexbox hbox">
+                                <label for="house-no">House Number</label><input id="house-not" name="house-no" type="text">
+                                <label for="street">street</label><input id="street" name="street" type="text">
+                            </div>
+                            <div class="flexbox hbox">
+                                <label for="city">City</label><input id="city" name="city" type="text">
+                                <label for="state">State</label><input id="state" name="state" type="text">
+                                <label for="zip">Zip</label><input id="zip" name="zip" type="text">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Payment Info</legend>
+                            <label for="card-no">Card Number</label><input id="card-no" name="card-no" type="text">
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Item Summary</legend>
+                            <div id="order-summary" class="flexbox hbox">
+                                <table id="item_list">
+                                    <thead>
+                                        <tr>
+                                            <th>Item #</th>
+                                            <th>Item Name</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="sn">12345</td><td class="item_name">Beachy Keen Shawl</td><td class="price">$40.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="Submit Form">
+                        <input type="reset" value="Reset Form">
+                    </form>
+                    <p>Some text in the Modal..</p>
+                </div>
+
+            </div>
             <div class="flexbox hbox p_entry">
                 <div class="flexbox vbox p_images">
                     <div class="flexbox vbox p_image_main">
@@ -48,7 +112,7 @@
                     </div>
                 </div>
                 <div class="flexbox vbox p_content">
-                    <h2>Crochet Beachy Keen Shawl $40</h2>
+                    <h2>Beachy Keen Shawl</h2>
                     <dl>
                         <dt>Craft</dt>
                         <dd>Crochet</dd>
@@ -59,6 +123,7 @@
                         <dt>Price</dt>
                         <dd>$40.00</dd>
                     </dl>
+                    <button id="myBtn">Purchase</button>
                     <P>&nbsp;&nbsp;&nbsp;&nbsp;This shawl is perfect for a cool spring or summer night. It is approximately 27” at it's longest point by 57” The yarn has a nice drape, sheen, and soft feel.&nbsp;&nbsp;It can even be worn for a night out on the town.  The shawl comes in a beautiful royal blue color.</p>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 import sys
 import os
 import io
+import json
 
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
@@ -22,6 +23,13 @@ propagated to all pages.
 templates_path = os.path.join(os.path.dirname(__file__), 'templates')
 root_env = Environment(loader=FileSystemLoader(templates_path),
                        autoescape=select_autoescape(['html', 'xml']))
+
+# open store items.js and treat as json
+with io.open('static/store/store_items.js', 'rt', encoding='utf-8') as store_file:
+    file_string = store_file.read()
+    _, store_json_string = file_string.split('=', 2)
+    store_db = json.loads(store_json_string)
+
 
 def render_blog():
     template = root_env.get_template('blog_tmp.html')
