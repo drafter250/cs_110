@@ -7,7 +7,7 @@ var today_time = today.getTime();
 var time_left = festival_time - today_time;
 var days_left = Math.ceil( time_left / (1000*60*60*24));
 
-var adMsg = "Get ready! The Rhinebeck Sheep & wool festival is Oct 19th thru the 22nd. There are " + days_left + " days until the festival.";
+var adMsg = "Get ready! The Rhinebeck Sheep & wool festival is Oct 19th thru the 22nd. There are " + days_left + " days until the festival.            ";
 var beginPos = 0;
 
 function scroll_announce() {
@@ -18,6 +18,7 @@ function scroll_announce() {
         beginPos = 0
     }
     
-    window.setTimeout("scroll_announce()", 200)
+    window.setTimeout("scroll_announce()", 120)
 
 }
+

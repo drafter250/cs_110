@@ -9,6 +9,7 @@
     <script type="text/javascript" src="static/knitty.js"></script>
     
     <script type="text/javascript" src="static/store.js"></script>
+    <script type="text/javascript" src="static/img_hove.js"></script>
     
     
 </head>
@@ -16,9 +17,7 @@
 <div class="flexbox hbox">
     <div class="flexbox left-gutter vbox"></div>
     <div class="flexbox vbox" style="flex: 1 10 auto">
-        <form id="msgForm">
-            <p style="text-align: center"><input type="text" name="scrollingMsg" size="100" /></p>
-        </form>
+
         <div class="flexbox hbox">
             <div class="flexbox hbox">
                 <div class="flexbox vbox">
@@ -34,6 +33,9 @@
         <div class="flexbox hbox">
             <a class="nav-button" href="home.html">Home</a><a class="nav-button" href="store.html">Store</a><a class="nav-button" href="portfolio.html">Portfolio</a><a class="nav-button" href="blog.html">Blog</a>
         </div>
+        <form id="msgForm">
+            <p style="text-align: center"><input type="text" name="scrollingMsg" size="100" /></p>
+        </form>
         <div id ="main_content" class="flexbox vbox">
             
             <h1 class="flx-centered">KnittyGirl's Store</h1>
@@ -46,68 +48,190 @@
             <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <form method="post" action="mailto:brycevtr250@gmail.com">
+                    <form id="checkout_form" method="post" action="mailto:brycevtr250@gmail.com">
+                        <p>All Fields Required</p>
                         <fieldset>
-                            <legend>Name & Mailing Address</legend>
-                            <div class="flexbox hbox">
-                                <label for="first-name">First</label><input id="first-name" name="first-name" type="text">
-                                <label for="last-name">Last</label><input id="last-name" name="last-name" type="text">
-                            </div>
-                            <div class="flexbox hbox">
-                                <label for="house-no">House Number</label><input id="house-not" name="house-no" type="text">
-                                <label for="street">street</label><input id="street" name="street" type="text">
-                            </div>
-                            <div class="flexbox hbox">
-                                <label for="city">City</label><input id="city" name="city" type="text">
-                                <label for="state">State</label><input id="state" name="state" type="text">
-                                <label for="zip">Zip</label><input id="zip" name="zip" type="text">
+                            <legend>Name &amp; Mailing Address</legend>
+                            <div class="flexbox vbox form-col">
+                                <div class="flexbox hbox form-row">
+                                    <div class="flexbox vbox form-col labels">
+                                        <label for="first-name">First:</label>
+                                        <label for="last-name">Last:</label>
+                                    </div>
+                                    <div class="flexbox vbox form-col inputs">
+                                        <input id="first-name" name="first-name" type="text" size=25>
+                                        <input id="last-name" name="last-name" type="text" size=25>
+                                    </div>
+                                </div>
+                                <div class="flexbox hbox form-row">
+                                    <label for="house-no">House Number:</label><input id="house-no" name="house-no" type="text" size="5" />
+                                    <label for="street">street:</label><input id="street" name="street" type="text" size="25" />
+                                </div>
+                                <div class="flexbox hbox form-row">
+                                    <label for="city">City:</label><input id="city" name="city" type="text" />
+                                    <label for="state">State:</label>
+                                        <input list="state_list" id="state" name="state" type="text" size="3"/>
+                                            <datalist id="state_list">
+                                                
+                                                <option value="AK" />
+                                                
+                                                <option value="AL" />
+                                                
+                                                <option value="AR" />
+                                                
+                                                <option value="AZ" />
+                                                
+                                                <option value="CA" />
+                                                
+                                                <option value="CO" />
+                                                
+                                                <option value="CT" />
+                                                
+                                                <option value="DE" />
+                                                
+                                                <option value="FL" />
+                                                
+                                                <option value="GA" />
+                                                
+                                                <option value="HI" />
+                                                
+                                                <option value="IA" />
+                                                
+                                                <option value="ID" />
+                                                
+                                                <option value="IL" />
+                                                
+                                                <option value="IN" />
+                                                
+                                                <option value="KS" />
+                                                
+                                                <option value="KY" />
+                                                
+                                                <option value="LA" />
+                                                
+                                                <option value="MA" />
+                                                
+                                                <option value="MD" />
+                                                
+                                                <option value="ME" />
+                                                
+                                                <option value="MI" />
+                                                
+                                                <option value="MN" />
+                                                
+                                                <option value="MO" />
+                                                
+                                                <option value="MS" />
+                                                
+                                                <option value="MT" />
+                                                
+                                                <option value="NC" />
+                                                
+                                                <option value="ND" />
+                                                
+                                                <option value="NE" />
+                                                
+                                                <option value="NH" />
+                                                
+                                                <option value="NJ" />
+                                                
+                                                <option value="NM" />
+                                                
+                                                <option value="NV" />
+                                                
+                                                <option value="NY" />
+                                                
+                                                <option value="OH" />
+                                                
+                                                <option value="OK" />
+                                                
+                                                <option value="OR" />
+                                                
+                                                <option value="PA" />
+                                                
+                                                <option value="RI" />
+                                                
+                                                <option value="SC" />
+                                                
+                                                <option value="SD" />
+                                                
+                                                <option value="TN" />
+                                                
+                                                <option value="TX" />
+                                                
+                                                <option value="UT" />
+                                                
+                                                <option value="VA" />
+                                                
+                                                <option value="VT" />
+                                                
+                                                <option value="WA" />
+                                                
+                                                <option value="WI" />
+                                                
+                                                <option value="WV" />
+                                                
+                                                <option value="WY" />
+                                                
+                                            </datalist>
+                                    <label for="zip">Zip:</label><input id="zip" name="zip" type="text" size="11" />
+                                </div>
                             </div>
                         </fieldset>
                         <fieldset>
                             <legend>Payment Info</legend>
-                            <label for="card-no">Card Number</label><input id="card-no" name="card-no" type="text">
-
+                            <label for="card-no">Card Number:</label><input id="card-no" name="card-no" type="text" size="16">
                         </fieldset>
                         <fieldset>
                             <legend>Item Summary</legend>
-                            <div id="order-summary" class="flexbox hbox">
+                            <div id="order-summary" class="flexbox hbox form-row">
                                 <table id="item_list">
                                     <thead>
                                         <tr>
                                             <th>Item #</th>
+                                            <th>Order date</th>
                                             <th>Item Name</th>
                                             <th>Price</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="sn">12345</td><td class="item_name">Beachy Keen Shawl</td><td class="price">$40.00</td>
+                                            <td>
+                                                <input id="item_sn" type="text" name="sn" value="" readonly />
+                                            </td>
+                                            <td>
+                                                <input id="order_date" type="text" name="sn" value="" readonly />
+                                            </td>
+                                            <td>
+                                                <input id="item_name" type="text" name="sn" value="" readonly />
+                                            </td>
+                                            <td>
+                                                <input id="item_price" type="text" name="sn" value="" readonly />
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </fieldset>
-                        <input type="submit" value="Submit Form">
-                        <input type="reset" value="Reset Form">
+                        <input id="checkout-submit" type="submit" value="Complete Purchase" />
+                        <input type="reset" value="Reset Form" />
                     </form>
-                    <p>Some text in the Modal..</p>
                 </div>
-
             </div>
             <div class="flexbox hbox p_entry">
                 <div class="flexbox vbox p_images">
                     <div class="flexbox vbox p_image_main">
-                        <img class="framed_img" src="static/images/store/IMG_4699.xs.jpg" alt="">
+                        <img class="main_framed_img" src="static/images/store/IMG_4699.xs.jpg" alt="" href="static/images/store/IMG_4699.xs.jpg">
                     </div>
                     <div class="flexbox hbox thumbnails">
                         <div class="flexbox vbox thumb_box">
-                            <img class="framed_img" src="static/images/store/IMG_4698.xs.jpg" alt="">
+                            <img class="framed_img" src="static/images/store/IMG_4698.xs.jpg" alt="" href="static/images/store/IMG_4699.xs.jpg">
                         </div>
                         <div class="flexbox vbox thumb_box">
-                            <img class="framed_img" src="static/images/store/IMG_4699.xs.jpg" alt="">
+                            <img class="framed_img" src="static/images/store/IMG_4699.xs.jpg" alt="" href="static/images/store/IMG_4699.xs.jpg">
                         </div>
                         <div class="flexbox vbox thumb_box">
-                            <img class="framed_img" src="static/images/store/IMG_4700.xs.jpg" alt="">
+                            <img class="framed_img" src="static/images/store/IMG_4700.xs.jpg" alt="" href="static/images/store/IMG_4700.xs.jpg">
                         </div>
                     </div>
                 </div>
@@ -123,24 +247,24 @@
                         <dt>Price</dt>
                         <dd>$40.00</dd>
                     </dl>
-                    <button id="myBtn">Purchase</button>
+                    <button class="purchase_btn " data-sn="12345">Purchase</button>
                     <P>&nbsp;&nbsp;&nbsp;&nbsp;This shawl is perfect for a cool spring or summer night. It is approximately 27” at it's longest point by 57” The yarn has a nice drape, sheen, and soft feel.&nbsp;&nbsp;It can even be worn for a night out on the town.  The shawl comes in a beautiful royal blue color.</p>
                 </div>
             </div>
             <div class="flexbox hbox p_entry">
                 <div class="flexbox vbox p_images">
                     <div class="flexbox vbox p_image_main">
-                        <img class="framed_img" src="static/images/store/IMG_4694.xs.jpg" alt="">
+                        <img class="main_framed_img" src="static/images/store/IMG_4694.xs.jpg" alt="" href="static/images/store/IMG_4694.xs.jpg">
                     </div>
                     <div class="flexbox hbox thumbnails">
                         <div class="flexbox vbox thumb_box">
-                            <img class="framed_img" src="static/images/store/IMG_4694.xs.jpg" alt="">
+                            <img class="framed_img" src="static/images/store/IMG_4694.xs.jpg" alt="" href="static/images/store/IMG_4694.xs.jpg">
                         </div>
                         <div class="flexbox vbox thumb_box">
-                            <img class="framed_img" src="static/images/store/IMG_4695.xs.jpg" alt="">
+                            <img class="framed_img" src="static/images/store/IMG_4695.xs.jpg" alt="" href="static/images/store/IMG_4694.xs.jpg">
                         </div>
                         <div class="flexbox vbox thumb_box">
-                            <img class="framed_img" src="static/images/store/IMG_4696.xs.jpg" alt="">
+                            <img class="framed_img" src="static/images/store/IMG_4696.xs.jpg" alt="" href="static/images/store/IMG_4694.xs.jpg">
                         </div>
                     </div>
                 </div>
@@ -156,6 +280,7 @@
                         <dt>Price</dt>
                         <dd>$60.00</dd>
                     </dl>
+                    <button class="purchase_btn" data-sn="23456">Purchase</button>
                     <P>&nbsp;&nbsp;&nbsp;&nbsp;Knitted in summer of 2016, made with Yarn Co., 100% silk yarn.&nbsp;&nbsp;It measures approximately 15” at it's longest point, by 48” wide.&nbsp;&nbsp;This shawl would make a great accent piece to jazz up any outfit.&nbsp;&nbsp;The silk yarn has a beautiful drape and a lovely soft feel.&nbsp;&nbsp;The shawl comes in a lovely heather light blue color.</p>
                 </div>
             </div>

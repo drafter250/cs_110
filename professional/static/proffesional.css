@@ -141,7 +141,19 @@ footer {
     justify-content: stretch;
     flex: 1 1 auto
 }
+
 .framed_img {
+    border-style: solid;
+    border-color: #E3CAF4;
+    border-width: 1px;
+    border-radius: 2px;
+    max-width: 100%
+}
+
+.framed_img:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.main_framed_img {
     border-style: solid;
     border-color: #E3CAF4;
     border-width: 1px;
@@ -178,6 +190,35 @@ a.nav-button:active {
     color: white
 }
 
+.purchase_btn {
+    font-family: 'Crafty Girls';
+    font-size: 18pt;
+    flex: 1 0 auto;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    text-align: center;
+    background-color: #E3CAF4;
+    border-style: solid;
+    border-color: #E3CAF4;
+}
+
+.purchase_btn:link, a.nav-button:visited {
+    text-align: center; 
+    text-decoration: none;
+}
+
+.purchase_btn:hover  {
+    background-color: white;
+    color:mediumpurple;
+    border-style: dashed;
+    border-color:mediumpurple
+
+}
+
+.purchase_btn:active {
+    background-color: mediumpurple;
+    color: white
+}
 /* modal popup adapted from w3 schools tutorial modals
 don't trigger pop-up warnings :)*/
 
@@ -217,4 +258,41 @@ don't trigger pop-up warnings :)*/
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* form styling */
+#order-summary input {
+    border-style: none;
+    text-align: center
+}
+
+#checkout_form label {
+    margin-right: 10px;
+}
+
+legend {
+    float: right
+}
+
+#checkout_form input {
+    box-shadow: 2px;
+}
+
+.labels {
+    padding-right: 5px;
+}
+
+fieldset {
+    border-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #E3CAF4;
+    margin-top: 22px
+}
+.form-row {
+    justify-content: flex-start;
+}
+#msgForm input {
+    border-style: none;
+    padding: .25em;
+    font-size: 12pt
 }
