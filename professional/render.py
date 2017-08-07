@@ -24,6 +24,13 @@ templates_path = os.path.join(os.path.dirname(__file__), 'templates')
 root_env = Environment(loader=FileSystemLoader(templates_path),
                        autoescape=select_autoescape(['html', 'xml']))
 
+states = [
+    "AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "IA", "ID",
+    "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT",
+    "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", 
+    "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"
+]
+
 # open store items.js and treat as json
 with io.open('static/store/store_items.js', 'rt', encoding='utf-8') as store_file:
     file_string = store_file.read()
@@ -51,7 +58,7 @@ def render_portfolio():
 
 def render_store():
     template = root_env.get_template('store_tmp.html')
-    rendered = template.render()
+    rendered = template.render(states=states)
     with io.open('store.html', 'wt', encoding='utf-8') as html_f:
         html_f.write(rendered)
 

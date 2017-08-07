@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+    {% block scripts %}
+        <script type="text/javascript" src="static/img_hove.js"></script>
+    {% endblock %}
     {% block title %}Portfolio{% endblock %}
             {% block content %}
             <h1 class="flx-centered">KnittyGirl's Portfolio</h1>
@@ -6,7 +9,7 @@
             <div class="flexbox hbox p_entry">
                 <div class="flexbox vbox p_images">
                     <div class="flexbox vbox p_image_main">
-                        <img class="framed_img" src="static/images/portfolio/striped_top_mid.JPG" alt="">
+                        <img class="main_framed_img" src="static/images/portfolio/striped_top_mid.JPG" alt="">
                     </div>
                     <div class="flexbox hbox thumbnails">
                         <div class="flexbox vbox thumb_box">
@@ -28,7 +31,7 @@
             <div class="flexbox hbox p_entry">
                 <div class="flexbox vbox p_images">
                     <div class="flexbox vbox p_image_main">
-                        <img class="framed_img" src="static/images/portfolio/cowl_far.jpg" alt="">
+                        <img class="main_framed_img" src="static/images/portfolio/cowl_far.jpg" alt="">
                     </div>
                     <div class="flexbox hbox fx1 thumbnails">
                         <div class="flexbox vbox thumb_box">
